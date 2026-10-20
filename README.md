@@ -1,1 +1,1 @@
-# exercitiu-git1
+Aici exersez git.
