@@ -23,6 +23,7 @@ def pe_servicii(tinte):
     """Dict: serviciu -> lista de porturi."""
     grupe = {}
     for t in tinte:
+        
         serviciu = t.get("serviciu", "necunoscut")
         port = port_valid(t["port"])
         if port is None:
@@ -30,7 +31,9 @@ def pe_servicii(tinte):
             continue
         grupe[serviciu] = []
         grupe[serviciu].append(port)
-
+   
+   
+    return grupe
 
 def peste_prag(tinte, prag):
     """Lista gazdelor cu un port mai mare decat pragul."""
